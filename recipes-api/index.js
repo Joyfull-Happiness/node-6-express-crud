@@ -67,8 +67,9 @@ async function getAllRecipesCount() {
   // The fs.readFile() method takes in 2 parameters:
   //   1. The file path to the file we want to read from
   //   2. The encoding
+
   const data = await fs.readFile("./recipes-data.json", "utf8");
-  const parsedrecipes = JSON.parse(data);
+  const parsedRecipes = JSON.parse(data);
   return parsedRecipes.length;
 }
 // ---------------------------------
